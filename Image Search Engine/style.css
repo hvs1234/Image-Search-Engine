@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+:root
+{
+    --bg: rgb(59, 59, 133);
+    --bg2: rgb(86, 86, 157);
+    --heading: #fff;
+    --p: #fff;
+    --btn-bg: rgb(255, 68, 0);
+    --btn-hover: rgb(225, 74, 19);
+    --box-shadow: 0 2px 5px black;
+    --text-shadow: 0 2px 5px black;
+}
+
+body
+{
+    background: var(--bg);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 2rem 0;
+    padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    background: var(--bg);
+    box-shadow: var(--box-shadow);
+}
+.container h3
+{
+    font-family: 'Saira';
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: var(--p);
+    font-weight: 500;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 2rem;
+}
+
+.search-part
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.search-part input
+{
+    padding: 1rem 2rem;
+    background: var(--bg2);
+    color: var(--p);
+    width: 40rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-family: 'Dosis';
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.search-part input::placeholder
+{
+    color: var(--p);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.search-part button
+{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    background: var(--btn-bg);
+    color: var(--p);
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.search-part button:hover
+{
+    background: var(--btn-hover);
+}
+
+.search-engine
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 22rem;
+    z-index: -1;
+}
+.search-result
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    justify-content: center;
+    gap: 4rem;
+}
+.search-result img
+{
+    width: 30rem;
+    height: 230px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+.search-engine #btn2
+{
+    padding: 0.8rem 2rem;
+    color: var(--p);
+    background: var(--btn-bg);
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in;
+    display: none;
+}
+
+.search-engine #btn2:hover
+{
+    background: var(--btn-hover);
+}
